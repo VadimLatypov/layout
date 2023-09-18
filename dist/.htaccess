@@ -1,0 +1,14 @@
+# Кодировка сайта
+ServerSignature Off
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+RewriteRule ^index.html$ https://layout.ltvi.site/ [R=301,L]
+
+AddType image/svg+xml svg svgz
+AddEncoding gzip svgz
+
+# Скрыть вывод ошибок на странице сайта
+php_flag display_startup_errors on
+php_flag display_errors on
+php_flag html_errors on
